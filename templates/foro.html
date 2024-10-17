@@ -1,0 +1,27 @@
+{% extends 'base-foro.html' %}
+
+{% block title %}VAGO'S - Foro{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="/static/css/foro.css">
+{% endblock %}
+
+{% block main %}
+
+<section>
+    <article class="d-flex justify-content-center">
+        <div id="spinner" class="" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+    </article>
+</section>
+
+<section  id="publicaciones" class="publicaciones">    
+</section>
+
+{% endblock %}
+
+{% block script %}
+<script src="../static/js/foro.js"></script>
+{% endblock %}
+

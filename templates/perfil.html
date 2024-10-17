@@ -1,0 +1,45 @@
+{% extends 'base-foro.html' %}
+
+{% block title %}VAGO'S - Perfil{% endblock %}
+
+{% block link%}
+<link rel="stylesheet" href="/static/css/perfil.css">
+{% endblock %}
+
+{% block main %}
+
+<section class="mi-perfil">
+    <div class="perfil">
+        <article>
+            <img src="../static/img/logo.png" width="50" height="50" alt="Foto de perfil">
+        </article>
+        <article class="contenidoPerfil">
+            <h2 class="h2" id="nombrePerfil"></h2>
+            <p id="descripcionPerfil" class="text-center"></p>
+            <div class="botonesPerfil">
+                <button class="btn btn-outline-danger" value="misPublicaciones">Mis publicaciones</button>                
+            </div>
+        </article>
+    </div>
+</section>
+
+<div class="mis-publicaciones">
+    <section>
+        <article class="d-flex justify-content-center">
+            <div id="spinner" class="" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+        </article>
+    </section>
+    
+    <h3 class="h3 num-publicaciones text-center mb-5 mt-5">Mis publicaciones <span id="numPublicaciones"></span></h2>
+    <section  id="publicaciones" class="publicaciones">    
+    </section>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="../static/js/perfil.js"></script>
+{% endblock %}
+

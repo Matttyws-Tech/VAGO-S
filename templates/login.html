@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block title %}VAGO'S - Login{% endblock %}
+
+{% block link%}
+<link rel="stylesheet" href="/static/css/login.css">
+{% endblock %}
+
+
+
+
+{% block header %}    
+{% endblock %}
+
+{% block body %}        
+<div class="cuerpo">
+    
+    <header>
+        <nav>
+            <a href="/" class="logo"><img src="/static/img/logo.png">VAGO'S</a>
+        </nav>
+        <hr>
+    </header>
+    
+
+
+    <main>
+        <div class="div-main">
+            <div class="p-3 div-form" >
+                <form id="form">
+                    <h1 class="text-center h3 mb-5" style="color: #444;">Inicia sesión con tu email y contraseña</h1>                                     
+                    <div class="form-floating mb-3 w-100">
+                        <input type="email" class="form-control" id="email" maxlength="30" placeholder="email" required>
+                        <label for="email" style="color: #000;">Email</label>
+                    </div>
+                    <div class="form-floating mb-5 w-100">
+                        <input type="password" class="form-control" id="clave" placeholder="" minlength="8" maxlength="30" required>
+                        <label for="clave" style="color: #000;">Contraseña</label>
+                    </div>
+                    <button class="btn w-100 mb-3" type="submit" style="font-size: 14pt; background-color: rgb(209, 99, 8); color:#fff;">Entrar</button>
+                    <span>ó</span>
+                    <a href="/#registrar">Registrarse</a>
+                </form>
+
+            </div>
+        </div>            
+    </main>
+    
+</div>    
+{% endblock %}
+
+{% block footer %}    
+{% endblock %}
+
+{% block script %}
+<script src="../static/js/loginPage.js"></script>
+{% endblock %}

@@ -1,0 +1,96 @@
+
+body, html {
+    height: 100vh;
+    margin: 0;
+}
+
+body{
+    background-color: #f5f5f5;
+    text-align: -webkit-center;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+hr{
+    margin: 0.1rem 0 0 0;
+}
+
+.cuerpo{
+    background-color: #fff;
+    height: 100vh;    
+    max-width: 1500px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header nav{
+    text-align: center;
+}
+
+header a{
+    color:#eb3000;
+    text-transform: uppercase;  
+    font-size: 26pt;
+}
+
+header a img{
+    width: 26pt;
+}
+
+main{
+    height: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-main{    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .div-login{
+    margin: 20px;
+    max-width: 450px;
+
+    border-style: solid;
+    border-color: #eb3000;
+    border-radius: 20px;
+
+}
+
+.div-form{    
+    max-width: 28rem;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #eb3000;
+    box-shadow: 0px 0px 20px 7px #d2d2d2;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button{
+    color: #eb3000;
+}
+
+
+@media (max-width:1129px) {
+    .div-main{
+        justify-content: center;
+
+    }
+}

@@ -1,0 +1,58 @@
+body{
+    background-color: #f6f6f6;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background: #fff;    
+}
+
+header hr{
+    margin: 0;
+}
+
+.navbar-brand{
+    letter-spacing: 1px;
+    font-size: 20pt;
+    color: #eb3000;
+}
+
+.navbar-brand img{
+    vertical-align: sub;
+}
+
+.nav-link{
+    font-size: 12pt;
+    letter-spacing: 1px;    
+    color: #eb3000;
+}
+
+main{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.modal-header{
+    background-color: #eb3000;    
+}
+
+.bodyPublicar #formPublicar{
+    text-align: -webkit-right;
+}
+
+.bodyPublicar #contenidoPublicacion{
+    
+    min-height: 150px;
+    resize: none;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

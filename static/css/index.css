@@ -1,0 +1,107 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    background: #fff;    
+}
+
+header hr{
+    margin: 0;
+}
+
+.navbar-brand{
+    letter-spacing: 1px;
+    font-size: 20pt;
+    color: #eb3000;
+}
+
+
+.nav-link{
+    font-size: 12pt;
+    letter-spacing: 1px;    
+    color: #eb3000;
+}
+
+main{
+    margin-top: 100px;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+
+.banner{    
+    height: 100vh;    
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.registro{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-registro, .form-registro{
+    margin-bottom: 50px;        
+    flex: 1;
+    min-width: 220px;
+}
+
+.mensaje-registro{
+    margin-right: 50px;
+}
+
+.form-registro{
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.form-registro #form{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title{
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #ececec;
+    align-content: space-evenly;
+}
+
+#comunidad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#comunidad article{
+    text-align: justify;
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 286px;
+}

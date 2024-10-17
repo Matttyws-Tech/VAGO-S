@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somos VAGO'S</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">VAGO'S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="justify-content: end;" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" id="link1" href="#registrar">Registrar</a>                                      
+                        <a class="nav-link" aria-current="page" id="link2" href="#comunidad">Comunidad</a>                  
+                        <a class="nav-link" aria-current="page" id="link3" href="/login">Iniciar Sesion</a>                                                                          
+                    </div>
+                </div>            
+            </div>                
+        </nav>
+        <hr>
+    </header>  
+    <main>
+        <section class="banner"></section>
+        <section id="registrar" class="registro">
+            <article class="mensaje-registro">
+                <h1 class="h1" style="color: #444;">¡Regístrate gratis y empieza a crear tu primera publicacion ahora mismo!</h1>                                     
+                <p>En VAGO'S puedes compartir tu conocimientos, comentar publicaciones y conocer a usuarios con tus mismos gustos.</p>                                 
+            </article>
+            <article class="form-registro">
+                <form id="form">
+                    <h2 class="text-center h2 mb-5" style="color: #444;">Comienza a crear tu cuenta</h2>                                     
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="" title="Ingresa tu correo electronico" required maxlength="30">
+                        <label for="inputEmail" style="color: #000;">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="inputNombre" placeholder="" title="Ingresa tu nombre de usuario" required maxlength="30">
+                        <label for="inputNombre" style="color: #000;">Pseudonombre</label>
+                    </div>
+                    <div class="form-floating mb-5">
+                        <input type="password" class="form-control" id="inputClave" placeholder="" title="Igresa tu contraseña" required minlength="8" maxlength="30">
+                        <label for="inputClave" style="color: #000;">Contraseña</label>
+                    </div>
+                    <button class="btn" type="submit" style="font-size: 14pt; background-color: rgb(209, 99, 8); color:#fff;">Registrarme</button>
+                </form>
+            </article>
+        </section>
+        <section class="sub-title">
+            <h2 class="h2 text-center">¿Que somos?</h2>
+        </section>
+        <section id="comunidad">
+            <article class="comunidad-uno"><p>VAGO'S es una aplicacion diseñada para proporcionar a los usuarios un espacio interactivo donde puedan participar en discuciones, compartir informacion y conectarse con otros usuarios.</p></article>
+            <article class="comunidad-dos"><p>
+                La plataforma permitira a los suarios registrarse de manera anonima y sin necesidad de un e-mail valido. Esto con el fin de simplificar el proceso y enfocarnos en el contenido.
+            </p></article>
+            <article class="comunidad-tres"><p>
+                Los usuarios podran crear publicaciones, comentar en publicaciones de otros y responder a comentarios. La plataforma se enfoca en brindar una experiencia de usuario intuitiva y facil de usar.
+            </p></article>
+        </section>
+    </main>
+        
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../static/js/landPage.js"></script>
+</html>

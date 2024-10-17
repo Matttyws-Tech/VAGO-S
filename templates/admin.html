@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %} Admin Page  {% endblock %}
+
+{% block link%}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block body %}  
+    <div class="cerrado" id="editarUsuario" value="0">
+
+    </div>
+
+    {% block header %}
+
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="/static/img/logo.png">VAGO'S</a>
+        </nav>
+        <hr>
+    </header>
+
+    {% endblock %}
+
+
+    <main>
+        <div class="div-main">
+            <div>
+                <h2 class="mt-5">Usuarios registrados</h2>
+            {% for user in data %}
+                <div class="card mt-3 mb-3" style="width: 18rem;">
+                    
+                    
+                    <div class="card-body">
+                        <h3 class="card-title">{{user[1]}} {{user[3]}}</h3>                    
+                        <p class="card-text">{{user[2]}}</p>
+                        <p class="card-text">{{user[4]}}</p>
+                        <p class="card-text">{{user[5]}}</p>
+                        <p class="card-text">{{user[6]}}</p>
+                        <a class="btn btn-danger" onclick="eliminarUser()">Eliminar</a>
+                    </div>
+                </div> 
+            {% endfor %}
+            </div>          
+
+        </div>            
+    </main>
+
+
+
+{% endblock %}
